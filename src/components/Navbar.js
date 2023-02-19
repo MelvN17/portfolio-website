@@ -18,7 +18,7 @@ const Navbar = () => {
       <li>About</li>
       <li>Tools</li>
       <li>Contact</li>
-      <li className='resumeBtn'>Resume</li>
+      <li className='resumeBtn nav'>Resume</li>
     </ul>
     <div className="toggle-icon" onClick={handleToggle}>
       {toggle? <Icon icon={x} size={28} />:<Icon icon={menu} size={28} />}
