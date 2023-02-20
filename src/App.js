@@ -3,6 +3,7 @@ import './App.css';
 import MainSection from './components/MainSection';
 import Navbar from './components/Navbar.js';
 import { FirstPart } from './components/FirstPart.js';
+import OtherProjects from './components/OtherProjects.js';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </div>
       <MainSection />
       <FirstPart />
+      <OtherProjects />
     </div>
   );
 }

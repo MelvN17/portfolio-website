@@ -1,5 +1,5 @@
 import React from 'react'
-import { homeObjOne, homeObjTwo, homeObjThree } from './Data.js'
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data.js'
 import WorkSection from './WorkSection.js'
 
 export const FirstPart = () => {
@@ -8,6 +8,7 @@ export const FirstPart = () => {
         <WorkSection {...homeObjOne} />
         <WorkSection {...homeObjTwo} />
         <WorkSection {...homeObjThree} />
+        <WorkSection {...homeObjFour} />
     </div>
   )
 }
