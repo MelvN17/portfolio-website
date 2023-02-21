@@ -1,16 +1,18 @@
 import React from 'react'
 import '../App.css'
 
-const WorkSection = ({workWrapper}) => {
+const WorkSection = ({lightBg, titleShown, reverseCard, projImg}) => {
+
   return (
-    <div className={workWrapper ? 'normColor' : 'dark'}>
+    <div className={lightBg ? 'normColor' : 'dark'}>
+       
        <div className="normCont">
-         <div className="innWrapper cont">
+         <div className={reverseCard ? "innWrapper" : "rev"}>
             <div className="left">
-                <div className="imgs"></div>
+               
             </div>
             <div className="right">
-                Test
+             
             </div>
         </div>  
        </div>

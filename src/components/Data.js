@@ -1,20 +1,30 @@
+import myImage from '../img/placeholder.png'
 export const homeObjOne = {
-    workWrapper: true
-
+    lightBg: true,
+    titleShown: true,
+    reverseCard: true,
+    projImg: myImage
 };
 
 export const homeObjTwo = {
-    workWrapper: false
-
+    lightBg: false,
+    titleShown: false,
+    reverseCard: false,
+    projImg: myImage,
 };
 
 export const homeObjThree = {
-    workWrapper: true
-
+    lightBg: true,
+    titleShown: false,
+    reverseCard: true,
+    projImg: myImage,
 };
 
 export const homeObjFour = {
-    workWrapper: false
+    lightBg: false,
+    titleShown: false,
+    reverseCard: false,
+    projImg: myImage,
 
 };
 

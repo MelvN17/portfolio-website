@@ -291,72 +291,126 @@
   margin: 0 auto;
 }
 
+.normColor h1{
+  color: #E1065E;
+  display: flex;
+  padding-top: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
 .dark{
   background-color: #232A4E;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
+
 }
 
-
-.container{
-  width: 20em;
-  height: 20em;
-  background: red;
+.dark h1{
+  color: #E1065E;
+  display: flex;
+  padding-top: 1em;
+  justify-content: center;
+  align-items: center;
+ 
 }
+
 .innWrapper h1{
   font-size: 2.3rem;
   color: #E1065E;
 }
 
 .normCont{
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 100vh;
   align-items: center;
   margin: 0 auto;
   overflow: hidden;
+
 }
 
 .innWrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20em;
+  width: 90%;
 }
 
+
 .left{
-  width: 500px;
-  height: 400px;
+  width: 30em;
+  height: 293px;
   background: #CCD6F6;
   z-index: 100;
-  margin-right: -100px;
+  margin-right: -200px;
 }
 
 
 .right{
-  width: 500px;
-  height: 500px;
-  background: #999; 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 55%;
+  height: 32em;
+  margin-right: -100px;
+  border: 2px black solid;
 }
 
+.right .imgBanner{
+  width: 600px;
+  height: 600px;
+}
+.rev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em;
+  flex-direction: row-reverse;
+  width: 90%;
+}
+
+.rev .right{
+   margin: -200px;
+}
 
 @media(max-width: 768px){
   .innWrapper{
     flex-direction: column-reverse;
   }
 
+  .normCont{
+    padding: 0 1em;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .rev{
+    flex-direction: column-reverse;
+  }
+
   .left{
-    width: 300px;
-    height: 200px;
+    width: 20em;
+    height: 300px;
     margin: 0 auto;
   }
 
   .right{
-    width: 300px;
+    width: 20em;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .right .imgBanner{
+    width: 289px;
     height: 300px;
   }
 
+  .rev .right{
+    margin: 0 auto;
+  }
+  
 }
 
 /* OTHER PROJECTS */
@@ -370,8 +424,11 @@
 }
 
 .opWrapper h1{
-  color: #CCD6F6;
-  padding: 2em 0;
+  color: #E1065E;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerWrapper{
@@ -392,14 +449,5 @@
   background-color: #CCD6F6;
 }
 
-.otherProj{
-  display: flex;
-  gap: 1em;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 5em;
 
-}
 
