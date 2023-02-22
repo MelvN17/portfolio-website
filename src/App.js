@@ -4,6 +4,7 @@ import MainSection from './components/MainSection';
 import Navbar from './components/Navbar.js';
 import { FirstPart } from './components/FirstPart.js';
 import OtherProjects from './components/OtherProjects.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MainSection />
       <FirstPart />
       <OtherProjects />
+      <Footer />
     </div>
   );
 }
