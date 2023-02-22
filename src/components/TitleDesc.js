@@ -13,11 +13,11 @@ const TitleDesc = () => {
             I am a {' '}
            <span className='desc'>
             <Typewriter 
-                words={['Front-End Developer', 'ServiceNow Developer', 'College Student']}
+                words={['Front-End Developer', 'UI/UX Designer', 'CS Undergraduate']}
                 loop={true}
                 cursor
                 cursorStyle='<'
-                typeSpeed={80}
+                typeSpeed={40}
                 deleteSpeed={40}
             /> 
            </span>         
