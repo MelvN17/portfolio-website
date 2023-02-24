@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import MainSection from './components/MainSection';
-import Navbar from './components/Navbar.js';
-import { FirstPart } from './components/FirstPart.js';
-import OtherProjects from './components/OtherProjects.js';
-import Footer from './components/Footer.js';
+import HeroPage from './components/pages/HeroPage';
+import Navbar from './components/pages/Navbar.js';
+import { WorkPage } from './components/pages/WorkPage.js';
+import OtherProjectsPage from './components/pages/OtherProjectsPage.js';
+import FooterPage from './components/pages/FooterPage.js';
+import AboutPage from './components/pages/AboutPage.js';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <div className="nav-wrapper">
         <Navbar />
       </div>
-      <MainSection />
-      <FirstPart />
-      <OtherProjects />
-      <Footer />
+      <HeroPage />
+      <AboutPage />
+      <WorkPage />
+      <OtherProjectsPage />
+      <FooterPage />
     </div>
   );
 }

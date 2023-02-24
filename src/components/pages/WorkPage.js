@@ -1,8 +1,8 @@
 import React from 'react'
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data.js'
-import WorkSection from './WorkSection.js'
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../workData.js'
+import WorkSection from '../WorkSection.js'
 
-export const FirstPart = () => {
+export const WorkPage = () => {
   return (
     <div>
         <WorkSection {...homeObjOne} />

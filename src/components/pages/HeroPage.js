@@ -1,9 +1,8 @@
 import React from 'react'
-import TitleDesc from './TitleDesc.js';
-import '../App.css'
-import Button from './Button.js';
-
-import SidebarLinks from './SidebarLinks.js';
+import TitleDesc from '../TitleDesc.js';
+import '../../App.css'
+import Button from '../Button.js';
+import SidebarLinks from '../SidebarLinks.js';
 
 const MainSection = () => {
   return (

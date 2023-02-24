@@ -12,13 +12,12 @@ const Navbar = () => {
   }
   return (
   <nav className={toggle?'navbar expanded':'navbar'}>
-    <img className="logo" src= {require("../img/logobg.png")} alt="logo"/>
+    <img className="logo" src= {require("../../img/logobg.png")} alt="logo"/>
     <ul className="links">
       <li>About</li>
       <li>Tools</li>
       <li>Work</li>
       <li>Contact</li>
-      <li>Certificates</li>
       <li className='resumeBtn nav'>Resume</li>
     </ul>
     <div className="toggle-icon" onClick={handleToggle}>

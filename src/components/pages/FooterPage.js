@@ -1,8 +1,8 @@
 import React from 'react'
-import '../App.css'
+import '../../App.css'
 const Footer = () => {
   return (
-    <div className='footerWrapper'>
+    <footer className='footerWrapper'>
         <div className="footerContent">
             <div className="title">
                 <h3>Home</h3>
@@ -28,8 +28,7 @@ const Footer = () => {
         <div className="footerBottom">
             <p>© Melvin S. Bulan 2023</p>
         </div>
-
-    </div>
+    </footer>
   )
 }
 
