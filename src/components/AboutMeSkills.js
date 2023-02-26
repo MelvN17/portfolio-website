@@ -1,7 +1,7 @@
 import React from 'react'
 import { SiReact, SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiSass,
          SiFirebase, SiNodedotjs,
-         SiFigma, SiGit, SiLinuxmint,
+         SiFigma, SiGit, SiUnity, SiLinuxmint,
          SiCloudera, SiPython, SiCsharp, SiJava
 } from "react-icons/si";
 import TechStackBtn from './TechStackBtn';
@@ -29,6 +29,7 @@ const AboutMeSkills = () => {
                 <h2>Other technologies</h2>
                 <TechStackBtn icon={<SiFigma className='icon figma'/>} text="Figma" />
                 <TechStackBtn icon={<SiGit className='icon git'/>} text="Git" />
+                <TechStackBtn icon={<SiUnity className='icon unity'/>} text="Unity" />
                 <TechStackBtn icon={<SiLinuxmint className='icon lm'/>} text="Linux Mint" />
                
             </div>
