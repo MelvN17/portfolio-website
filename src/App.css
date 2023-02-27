@@ -238,7 +238,7 @@
 /* SIDEBAR */
 .sideWrapper{
   position:fixed;
-  bottom:90px;
+  bottom: 90px;
   left:20px;
   z-index:100;
 }
@@ -457,7 +457,7 @@
 
 }
 
-.containerWrapper .item{
+.containerWrapper .card{
   width: 23em;
   height: 23em;
   position: relative;
@@ -472,7 +472,7 @@
   object-fit: cover;
 }
 
-.item .content{
+.card .card-content{
   width: 100%;
   height: 100%;
   top: 100%;
@@ -485,7 +485,7 @@
   flex-direction: column;
 }
 
-.item:hover .content{
+.card:hover .card-content{
   top: 0;
   transition: 0.3s all ease-in-out;
 }
@@ -513,20 +513,29 @@
   gap: 3px;
 }
 .tech{
-
   font-size: 1rem;
   font-weight: 500;
   border: 1px #030D1A solid;
   padding: 3px;
 }
-.links a{
+
+.card-links{
+  display: flex; 
+  gap: 1.5em;
+}
+.card-links a{
   color: #333;
   text-decoration: none;
   list-style: none;
   margin-right: 1em;
 }
 
-.links:hover{
+.card-links .nav-icon{
+  position: absolute;
+  bottom: 30px;
+}
+
+.card-links:hover{
   color: #333;
 }
 
