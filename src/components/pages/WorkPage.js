@@ -4,11 +4,11 @@ import WorkSection from '../WorkSection.js'
 
 export const WorkPage = () => {
   return (
-    <div>
+    <section>
         <WorkSection {...homeObjOne} />
         <WorkSection {...homeObjTwo} />
         <WorkSection {...homeObjThree} />
         <WorkSection {...homeObjFour} />
-    </div>
+    </section>
   )
 }
