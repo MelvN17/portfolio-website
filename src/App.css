@@ -11,7 +11,7 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-image: linear-gradient(#283E57, #030D1A);
+  background-color: #283E57;
 }
 
 .nav-wrapper{
@@ -34,8 +34,8 @@
 }
 
 .navbar .logo{
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 .navbar .links{
@@ -288,145 +288,8 @@
 }
 /* WORK SECTION */
 
-.normColor{
-  background-color: #f2f2f2;
-  width: 100%;
-  padding: 3em 0;
-  margin: 0 auto;
-}
+@media(max-width: 900px){
 
-.normColor h1{
-  color: #E1065E;
-  display: flex;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  justify-content: center;
-  align-items: center;
-}
-
-.dark{
-  background: #283E57;
-  width: 100%;
-  padding: 3em 0;
-  margin: 0 auto;
-
-}
-
-.dark h1{
-  color: #E1065E;
-  display: flex;
-  padding-top: 1em;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-.innWrapper h1{
-  font-size: 2.3rem;
-  color: #E1065E;
-}
-
-.normCont{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5em;
-  margin: 0 auto;
-  height: 100%;
-  overflow: hidden;
-
-
-}
-
-.normCont .rev{
-  width: 100%;
-  margin: 0 auto;
-  height: 90vh;
-}
-
-.innWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-
-.left{
-  width: 30em;
-  height: 293px;
-  background: #CCD6F6;
-  z-index: 100;
-  margin-right: -200px;
-}
-
-
-.right{
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  width: 55%;
-  height: 32em;
-  margin-right: -100px;
-  border: 2px black solid;
-}
-
-.right .imgBanner{
-  width: 100%;
-  height: 32em;
-}
-.rev{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4em;
-  flex-direction: row-reverse;
-  width: 90%;
-}
-
-.rev .right{
-   margin: -200px;
-}
-
-@media(max-width: 768px){
-  .innWrapper{
-    flex-direction: column-reverse;
-  }
-
-  .normCont{
-    padding: 0 1em;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .rev{
-    flex-direction: column-reverse;
-  }
-
-  .left{
-    width: 20em;
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  .right{
-    width: 20em;
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  .right .imgBanner{
-    width: 289px;
-    height: 300px;
-  }
-
-  .rev .right{
-    margin: 0 auto;
-  }
-  
-  .normCont .rev{
-    height: 100%;
-  }
 }
 
 /* OTHER PROJECTS */
@@ -666,7 +529,7 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: linear-gradient(#283E57, #030D1A);
+  background-color: #283E57;
 }
 
 .content-wrapper{

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Icon } from 'react-icons-kit'
 import {menu} from 'react-icons-kit/feather/menu'
 import {x} from 'react-icons-kit/feather/x'
-
+import logoNew from "../../img/logoNew.svg";
 
 const Navbar = () => {
 
@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   return (
   <nav className={toggle?'navbar expanded':'navbar'}>
-    <img className="logo" src= {require("../../img/logobg.png")} alt="logo"/>
+    <img className="logo" src= {logoNew} alt="logo"/>
     <ul className="links">
       <li>About</li>
       <li>Tools</li>

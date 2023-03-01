@@ -13,9 +13,7 @@ const WorkSection = ({lightBg, titleShown, reverseCard, projImg}) => {
             <div className="left">
                
             </div>
-            <div className="right">
-              <img className="imgBanner" src={projImg} alt="Project 1" />
-            </div>
+            <img className="right" src={projImg} alt="Project 1" />
         </div>  
        </div>
     </div>
