@@ -298,7 +298,7 @@
   margin-inline: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 1em;
 }
 
@@ -306,12 +306,13 @@
   display: flex;
   padding: 2rem;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .left{
-  width: 50%;
+  min-width: 300px;
+  max-width: 50%;
   min-height: 300px;
   background-color: #303137;
   display: flex; 
@@ -321,23 +322,79 @@
   padding: 1.90rem;
   z-index: 1;
   border-radius: 0.6rem;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 /* CONTAINER FOR LEFT CARD */
 .left-container{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: left;
   flex-direction: column;
 }
 
+.work-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tech-stack .tech {
+  background-color: #fff;
+  color: #303137;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.work-info {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.work-links{
+  margin: 2rem 0;
+  display: flex;
+  gap: 1em;
+}
+
+
+button{
+  background-color: #f2f2f2;
+  color: #303137;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #E1065E;
+  color: #fff;
+}
 
 .right{
-  width: 60%;
+  width: 50%; 
   height: min(30em, 35.5em);
   border-radius: 8px;
-  margin-left: -150px;
+  margin-left: -150px; 
+  object-fit: cover;
+  box-sizing: border-box; 
 }
 
 /* REVERSE */
@@ -345,7 +402,7 @@
   display: flex;
   padding: 2rem;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row-reverse;
 }
@@ -357,46 +414,82 @@
 
 @media(max-width: 900px){
 
-  .normal, .reverse{
+  .normal,
+  .reverse {
     position: relative;
-    flex-direction: column;
-    width: 40em;
-    height: 40em;
+    width: 100%;
+    height: 23em;
     overflow: hidden;
+    flex-direction: column;
   }
 
   .left,
-  .left .reverse{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top: 100%;
-   right: 0;
-   background: #1f3d4738;
-   border: 2px solid #CCD6F6;
-   backdrop-filter: blur(10px);
-   padding: 2em; 
-   display: flex;
-   flex-direction: column;
+  .left .reverse {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 23em;
+    top: 100%;
+    right: 0;
+    background: #1f3d4738;
+    border: 2px solid #CCD6F6;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 
-  .right{
+  .right {
     width: 100%;
-    height: 100%;
+    height: 23em;
     margin: 0 auto;
     object-fit: cover;
-   }
-   
-   .reverse .right{
-    margin-left: -150px;
-   }
-   /* HOVER EFFECT */
-   .normal:hover .left,
-   .reverse:hover .left{
+  }
+
+  .reverse .right {
+    width: 100%;
+    height: 23em;
+    margin: 0 auto;
+  }
+
+  /* HOVER EFFECT */
+  .normal:hover .left,
+  .reverse:hover .left {
     top: 0;
     transition: 0.3s all ease-in-out;
-   }
+  }
 
+  .work-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-stack {
+    margin-bottom: 1rem;
+  }
+  
+  .tech-stack .tech {
+    font-size: 1rem;
+    margin: 0.1rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.1rem;
+  }
+  
+  .work-info {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .work-links {
+    margin: 1rem 0;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 /* OTHER PROJECTS */
