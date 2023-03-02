@@ -4,8 +4,8 @@ import '../App.css'
 const WorkSection = ({reverseCard, projImg, titleShown, title, techStack, info, liveLink, githubLink}) => {
 
   return (
-    <section className="workContainer">
-       <div className= "title" style={{display: titleShown ? "block" : "none"}}>
+    <section className="workContainer" id="work">
+       <div className= "page-title" style={{display: titleShown ? "block" : "none"}}>
           <h1>Featured Works</h1>
        </div>
        <div className="normCont">

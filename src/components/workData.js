@@ -5,7 +5,7 @@ export const homeObjOne = {
     titleShown: true,
     title: "Title",
     techStack: ['Lorem', 'Lorem', 'Lorem', 'Lorem', 'Lorem'],
-    info: "lorem ipsum something somethinglorem ipsum something somethinglorem ipsum something somethinglorem ipsum something something",
+    info: "lorem ipsum something somethinglm ipsum something somethinglorem ipsum something something",
     liveLink: "/#", 
     githubLink: "/#",
 };

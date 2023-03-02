@@ -5,8 +5,8 @@ import OtherProjSection from "../OtherProjSection.js";
 
 const OtherProjects = () => {
   return (
-    <section className='opWrapper'>
-        <h1 className='otherProj'>Other Projects</h1>
+    <section className='opWrapper' >
+        <h1 className='page-title'>Other Projects</h1>
         <div className="containerWrapper">
           <OtherProjSection {...otherProjOne} />
           <OtherProjSection {...otherProjTwo} />

@@ -8,7 +8,7 @@ import TechStackBtn from './TechStackBtn';
 const AboutMeSkills = () => {
   return (
     <section className="skills-wrapper">
-        <div className="content-wrapper">
+        <div className="content-wrapper" id="tools">
             <div className="title">
                 <h2>Front-End Technologies</h2>
                 <TechStackBtn icon={<SiHtml5 className='icon html'/>} text="HTML" />
