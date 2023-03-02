@@ -1,31 +1,46 @@
 import myImage from '../img/placeholder.png'
 export const homeObjOne = {
-    lightBg: true,
-    titleShown: true,
     reverseCard: true,
-    projImg: myImage
+    projImg: myImage,
+    titleShown: true,
+    title: "Title",
+    techStack: ['Lorem', 'Lorem', 'Lorem', 'Lorem'],
+    info: "lorem ipsum something something",
+    liveLink: "/#", 
+    githubLink: "/#",
 };
 
 export const homeObjTwo = {
-    lightBg: false,
-    titleShown: false,
-    reverseCard: false,
+    reverseCard: true,
     projImg: myImage,
+    titleShown: false,
+    title: "Title",
+    techStack: ['Lorem', 'Lorem', 'Lorem', 'Lorem'],
+    info: "testing",
+    liveLink: "/#", 
+    githubLink: "/#",
 };
 
 export const homeObjThree = {
-    lightBg: true,
-    titleShown: false,
     reverseCard: true,
     projImg: myImage,
+    titleShown: false,
+    title: "Title",
+    techStack: ['Lorem', 'Lorem', 'Lorem', 'Lorem'],
+    info: "testing",
+    liveLink: "/#", 
+    githubLink: "/#",
 };
 
 export const homeObjFour = {
-    lightBg: false,
-    titleShown: false,
-    reverseCard: false,
+    reverseCard: true,
     projImg: myImage,
-
+    titleShown: false,
+    title: "Title",
+    techStack: ['Lorem', 'Lorem', 'Lorem', 'Lorem'],
+    info: "testing",
+    liveLink: "/#", 
+    githubLink: "/#",
 };
 
 

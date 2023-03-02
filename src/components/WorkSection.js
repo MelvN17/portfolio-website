@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 
-const WorkSection = ({lightBg, titleShown, reverseCard, projImg}) => {
+const WorkSection = ({reverseCard, projImg, titleShown, title, techStack, info, liveLink, githubLink}) => {
 
   return (
     <section className="workContainer">
@@ -11,7 +11,19 @@ const WorkSection = ({lightBg, titleShown, reverseCard, projImg}) => {
        <div className="normCont">
          <div className={reverseCard ? "normal" : "reverse"}>
             <div className="left">
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus voluptates impedit adipisci quas dolorum quos eum praesentium perferendis! Odio minus vero porro accusantium obcaecati aspernatur.</p>
+               <div className="left-container">
+                  <h2 className='work-title'>{title}</h2>
+                  <div className='tech-stack'>
+                     {techStack.map((tech) => (
+                        <p className='tech' >{tech}</p>
+                     ))}
+                  </div>
+                  <p className='work-info'>{info}</p>
+                  <div className="work-links">
+                     <a href={liveLink} target="_blank" rel="noreferrer" ><button>Live Link</button></a>
+                     <a href={githubLink} target="_blank" rel="noreferrer"><button>Source Code</button></a>
+                  </div>
+               </div>
             </div>
             <img className="right" src={projImg} alt="Project 1" />
         </div>  

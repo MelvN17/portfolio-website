@@ -16,7 +16,7 @@
 
 .nav-wrapper{
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
   padding-top: 1em;
   overflow-x: hidden;
@@ -296,7 +296,6 @@
 .normCont{
   width: min(90%, 80.5em);
   margin-inline: auto;
-  border: 2px solid hotpink;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,7 +308,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 .left{
@@ -325,11 +323,19 @@
   border-radius: 0.6rem;
 }
 
+/* CONTAINER FOR LEFT CARD */
+.left-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+
 .right{
-  width: min(60%, 40em);
+  width: 60%;
   height: min(30em, 35.5em);
-  background: url(https://images.unsplash.com/photo-1542662565-7e4b66bae529?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80)
-    no-repeat center / cover;
   border-radius: 8px;
   margin-left: -150px;
 }
@@ -367,7 +373,8 @@
    top: 100%;
    right: 0;
    background: #1f3d4738;
-   backdrop-filter: blur(15px);
+   border: 2px solid #CCD6F6;
+   backdrop-filter: blur(10px);
    padding: 2em; 
    display: flex;
    flex-direction: column;
