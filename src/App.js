@@ -6,6 +6,7 @@ import { WorkPage } from './components/pages/WorkPage.js';
 import OtherProjectsPage from './components/pages/OtherProjectsPage.js';
 import FooterPage from './components/pages/FooterPage.js';
 import AboutPage from './components/pages/AboutPage.js';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutPage />
       <WorkPage />
       <OtherProjectsPage />
+      <Contact />
       <FooterPage />
     </div>
   );

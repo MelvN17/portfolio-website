@@ -1,4 +1,4 @@
-import myImage from '../img/placeholder.png'
+import myImage from '../img/proj1.png'
 export const homeObjOne = {
     reverseCard: true,
     projImg: myImage,

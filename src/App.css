@@ -269,6 +269,10 @@ a{
   cursor: pointer;
 }
 
+.sideWrapper .icons:hover{
+  background-color: #E1065E;
+}
+
 .vl {
   border-left: 6px solid #232A4E;
   height: 10em;
@@ -408,7 +412,7 @@ button:hover {
 
 .right{
   width: 50%; 
-  height: min(30em, 35.5em);
+  height: min(40em, 35.5em);
   border-radius: 8px;
   margin-left: -150px; 
   object-fit: cover;
@@ -628,7 +632,126 @@ button:hover {
   height: 2em;
 }
 
+/* CONTACT FORM */
+.contact-wrapper{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
 
+.contact-wrapper .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #E1065E;
+  margin: 2em 0;
+}
+
+.contact-container{
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-left{
+  flex-basis: 50%;
+  padding-right: 1em;
+}
+
+.contact-left span{
+  color: #E1065E;
+}
+.contact-left h1{
+  font-size: 3rem;
+  color: #FFF;
+}
+
+.contact-right{
+  flex-basis: 40%;
+}
+
+.contact-right h1{
+  font-size: 1.9rem;
+  color: #FFF;
+}
+
+.contact-right form{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+input:hover,
+textarea:hover{
+  border-color: #E1065E;
+}
+
+input,
+textarea{
+  background: none;
+  color: #FFF;
+  font-weight: bold;
+  padding: 1em;
+  font-size: 1rem;
+  border: 2px solid #FFF;
+  margin: 0.76em 0;
+}
+
+textarea{
+  width: 500px;
+  height: 300px;
+  resize: none;
+}
+
+/* HORIZONTAL CARD */
+.horizontal-card{
+  margin: 2em 0;
+  display: flex;
+
+  align-items: center;
+  gap: 2em;
+}
+
+.horizontal-card p{
+  font-size: 1.2rem;
+  color: #FFF;
+}
+
+.hor-icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #E1065E;
+}
+
+@media(max-width: 975px){
+  .contact-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-right form{
+    width: 100%;
+  }
+
+  .contact-right textarea{
+    width: 100%;
+    height: 200px;
+  }
+  .contact-left h1{
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .horizontal-card p{
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+}
 
 /* FOOTER AREA */
 .footerWrapper{
@@ -658,6 +781,10 @@ button:hover {
 .footerContent .title h3{
   color: #E1065E;
   padding-bottom: 0.4em;
+}
+
+.footerContent p{
+  cursor: pointer;;
 }
 .footerBottom{
   display: flex;
