@@ -13,7 +13,7 @@ const AboutMe = () => {
               <p> As a web developer, I'm constantly learning and experimenting with new technologies to enhance user experiences, and I'm excited to continue growing and contributing to the industry.</p>
             </div>
             </div>
-            <img src={profilePic} alt="Profile picture"  className="about-right" /> 
+            <img src={profilePic} alt="ProfilePic"  className="about-right" /> 
         </div> 
     </section>
   );
